@@ -1,0 +1,13 @@
+{
+  "name": "medbridge/json-reader-php",
+  "description": "Simple JSON reader",
+  "keywords": ["json","vault"],
+  "type": "package",
+  "require": {},
+  "authors": [{ 
+      "name": "Eric Staples", 
+      "email": "eric@medbridgeed.com"
+  }],
+  "version": "0.0.1",
+  "minimum-stability": "dev" 
+}
