@@ -1,6 +1,6 @@
 # json-reader-php
 
-Used to read key/value pairs from a flat JSON file. 
+Easily read key/value pairs from a flat JSON file. 
 
 # Installation
 
