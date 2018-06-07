@@ -16,4 +16,4 @@ Update composer.json to include the following and then run `composer update`
     "url": "git@github.com:MedBridge/json-reader-php.git"
   }]
 }
-``1
+```
