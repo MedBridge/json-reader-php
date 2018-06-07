@@ -18,7 +18,7 @@ Update composer.json to include the following and then run `composer update`
 }
 ```
 
-# Example Implementation
+# Example implementation
 
 ```php
 class Vault
