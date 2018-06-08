@@ -1,13 +1,11 @@
 <?php
 
-use \Flow\JSONPath\JsonPath;
-
 namespace JsonReader;
+
+use \Flow\JSONPath\JsonPath;
 
 class PathReader extends Reader
 {
-    private $jsonPath;
-    private $json;
 
     /** @var JsonPath */
     private $flowJson;
@@ -18,12 +16,12 @@ class PathReader extends Reader
         $this->flowJson = new JsonPath($this->jsonPath);
     }
 
-    public function read(string $key)
+    public function read(string $key) : string
     {
         try {
             return $this->flowJson->find($key);
         } catch (\Exception $e) {
-            throw new ReaderException($e);
+            throw new JsonReaderException($e);
         }
     }
 

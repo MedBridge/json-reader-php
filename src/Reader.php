@@ -5,24 +5,27 @@ namespace JsonReader;
 abstract class Reader
 {
 
-  private $json;
-  private $jsonPath;
+    /** @var array */
+    protected $json;
 
-  public function __construct(string $jsonPath)
-  {
-    $tmp = file_get_contents($this->jsonPath);
+    /** @var string */
+    protected $jsonPath;
 
-    if ($tmp === false) {
-        throw new ReaderException("Unable to load JSON file");
+    public function __construct(string $jsonPath)
+    {
+        $tmp = file_get_contents($jsonPath);
+
+        if ($tmp === false) {
+            throw new JsonReaderException("Unable to load JSON file");
+        }
+
+        $decoded = json_decode($tmp);
+        if (is_null($decoded) || !$decoded) {
+            throw new JsonReaderException("Unable to decode JSON file");
+        }
+
+        $this->json = $decoded;
     }
 
-    $decoded = json_decode($tmp);
-    if (is_null($decoded) || !$decoded) {
-        throw new ReaderException("Unable to decode JSON file");
-    }
-
-    $this->json = $decoded;
-  }
-
-  public abstract function read($key);
+    public abstract function read(string $key) : string;
 }

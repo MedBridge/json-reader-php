@@ -4,12 +4,9 @@ namespace JsonReader;
 
 class FlatReader extends Reader
 {
-    private $jsonPath;
-    private $json;
-
     public function __construct(string $jsonPath) 
     {
-        $this->jsonPath = $jsonPath;
+        parent::__construct($jsonPath);
     }
 
     public function read(string $key) : string
@@ -17,7 +14,7 @@ class FlatReader extends Reader
         if (!is_null($this->json) && isset($this->json->$key)) {
             return $this->json->$key;
         }
-        throw new ReaderException("Unable to retrieve JSON value: ${key}");
+        throw new JsonReaderException("Unable to retrieve JSON value: ${key}");
     }
 
 }
