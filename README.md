@@ -24,8 +24,8 @@ Update composer.json to include the following and then run `composer update`
 class Vault
 {
 
-    const secretPath = "/var/vault/secrets.json";
-    const readerName = "vault";
+    const secretPath = "/path/to/json.json";
+    const readerName = "myjson";
 
     public static function read($secret)
     {
