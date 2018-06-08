@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2fe692d21c3c2885ba5f658a3e1af5e8",
+    "content-hash": "1a3f73fdee98c587e76d07a9ad2655c0",
     "packages": [
         {
             "name": "flow/jsonpath",
-            "version": "dev-master",
+            "version": "0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FlowCommunications/JSONPath.git",
-                "reference": "2909fcad962cd933dfe392febda53eee54e81235"
+                "reference": "f0222818d5c938e4ab668ab2e2c079bd51a27112"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FlowCommunications/JSONPath/zipball/2909fcad962cd933dfe392febda53eee54e81235",
-                "reference": "2909fcad962cd933dfe392febda53eee54e81235",
+                "url": "https://api.github.com/repos/FlowCommunications/JSONPath/zipball/f0222818d5c938e4ab668ab2e2c079bd51a27112",
+                "reference": "f0222818d5c938e4ab668ab2e2c079bd51a27112",
                 "shasum": ""
             },
             "require": {
@@ -45,15 +45,13 @@
                 }
             ],
             "description": "JSONPath implementation for parsing, searching and flattening arrays",
-            "time": "2018-03-04T16:41:37+00:00"
+            "time": "2018-03-04T16:39:47+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "flow/jsonpath": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

@@ -4,7 +4,7 @@
   "keywords": ["json","vault"],
   "type": "package",
   "require": {
-    "flow/jsonpath": "dev-master"
+    "flow/jsonpath": "0.4.0"
   },
   "authors": [{ 
       "name": "Eric Staples", 
