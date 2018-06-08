@@ -3,10 +3,17 @@
   "description": "Simple JSON reader",
   "keywords": ["json","vault"],
   "type": "package",
-  "require": {},
+  "require": {
+    "flow/jsonpath": "dev-master"
+  },
   "authors": [{ 
       "name": "Eric Staples", 
       "email": "eric@medbridgeed.com"
   }],
+  "autoload": {
+    "psr-4": {
+      "JsonReader\\": "src/"
+    }
+  },
   "version": "0.0.1"
 }
