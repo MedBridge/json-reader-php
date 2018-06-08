@@ -2,7 +2,7 @@
 
 namespace Reader;
 
-use Exception;
+use \Exception;
 
 class ReaderException extends Exception
 {
